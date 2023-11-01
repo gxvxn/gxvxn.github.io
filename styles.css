@@ -1,0 +1,116 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    overflow-x: hidden;
+    /* padding-top: 50px; */
+}
+
+.logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+body {
+    font-family: 'Alice', serif;
+    background:linear-gradient( #202731, #344050);
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.spacing {
+    padding-top: 200px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ce651ff1;
+    transition: 0.3s;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+    padding: 50px 15vw;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(104% + 1.3px);
+    height: 140px;
+}
+
+.wave .shape-fill {
+    fill: #E7841F;
+}
+
+.spacer {
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.layer1 {
+    background-image: url('./layered-waves-haikei.svg');
+}
+
+.parallax {
+    background-image: url('./layered-waves-haikei.svg');
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    padding: 10px;
+}
