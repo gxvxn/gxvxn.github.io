@@ -1,116 +1,71 @@
-html {
-    scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
 
-header {
-    text-align: center;
-    overflow-x: hidden;
-    /* padding-top: 50px; */
+/* body {
+	background-color: #282828;
+	color: #ebdbb2;
+	font-family: "Noto Sans Mono", monospace;
+	font-size: 14px;
 }
-
-.logo {
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+.terminal {
+	border: 1px solid #ebdbb2;
+	padding: 10px;
+	margin: 10px;
+	overflow-y: scroll;
 }
+input {
+	background-color: transparent;
+	border: none;
+	color: #ebdbb2;
+	font-family: "Noto Sans Mono", monospace;
+	font-size: 14px;
+	width: 100%;
+} */
 
 body {
-    font-family: 'Alice', serif;
-    background:linear-gradient( #202731, #344050);
-    color: white;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+	background-color: #282828;
+	color: #ebdbb2;
+	font-family: "Fira Code", monospace;
+	font-size: 15px;
 }
 
-.spacing {
-    padding-top: 200px;
+.terminal {
+	/* border: 1px solid #ebdbb2; */
+	padding: 10px;
+	margin: 10px;
+	overflow-y: scroll;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-left: 8%;
-    padding-right: 8%;
+#input-line {
+	display: flex; /* Display label and input side by side */
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 25px;
+#user-label {
+	/* color: #83a598; */
+	color: #d8a657;
+	font-family: "Fira Code", monospace;
+	font-size: 15px;
+	padding-right: 5px; /* Add spacing between label and input */
 }
 
-nav ul li a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-weight: bold;
+input {
+	background-color: transparent;
+	border: none;
+	color: #ebdbb2;
+	font-family: "Fira Code", monospace;
+	font-size: 15px;
+	width: 100%;
+	outline: none;
 }
 
-nav ul li a:hover {
-    color: #ce651ff1;
-    transition: 0.3s;
+a {
+	color: #ea6962;
+	text-decoration: underline;
 }
 
-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100px;
-    padding: 50px 15vw;
+pre.asci {
+	color: #d8a657;
 }
 
-.wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(104% + 1.3px);
-    height: 140px;
-}
-
-.wave .shape-fill {
-    fill: #E7841F;
-}
-
-.spacer {
-    aspect-ratio: 960/200;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    z-index: -1;
-}
-
-.layer1 {
-    background-image: url('./layered-waves-haikei.svg');
-}
-
-.parallax {
-    background-image: url('./layered-waves-haikei.svg');
-    height: 100%;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-footer {
-    padding: 10px;
+.commands {
+	color: #83a598;
 }
